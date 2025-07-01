@@ -228,7 +228,7 @@ RunService.RenderStepped:Connect(function(dt)
 				tag.AlwaysOnTop = true
 				local label = Instance.new("TextLabel", tag)
 				label.Size = UDim2.new(1, 0, 1, 0)
-				label.Text = "😈 " .. plr.Name
+				label.Text = "💤" .. plr.Name
 				label.BackgroundTransparency = 1
 				label.TextColor3 = Color3.new(1, 0, 0)
 				label.TextScaled = true
@@ -242,7 +242,7 @@ RunService.RenderStepped:Connect(function(dt)
 			if plr ~= LocalPlayer and char and char:FindFirstChild("Humanoid") and char:FindFirstChild("Head") then
 				local tag = char:FindFirstChild("EnemyTag")
 				if tag and tag:FindFirstChild("TextLabel") then
-					tag.TextLabel.Text = "😈 " .. plr.Name .. " | HP: " .. math.floor(char.Humanoid.Health)
+					tag.TextLabel.Text = "💤" .. plr.Name .. " | HP: " .. math.floor(char.Humanoid.Health)
 				end
 			end
 		end
